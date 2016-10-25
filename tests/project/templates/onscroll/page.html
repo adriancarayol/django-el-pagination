@@ -1,5 +1,6 @@
 {% load el_pagination_tags %}
 
+<p>Total length: {{ objects|length }}</p>
 {% paginate 10 objects %}
 {% for object in objects %}
   <div class="well object">
